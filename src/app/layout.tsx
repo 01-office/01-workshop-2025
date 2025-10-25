@@ -1,6 +1,13 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
+const pretendard = localFont({
+  src: "../../public/fonts/PretendardVariable.woff2",
+  display: "swap",
+  variable: "--font-pretendard",
+});
 
 export const metadata: Metadata = {
   title: "0에서 1까지",
@@ -14,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className={`${pretendard.variable} antialiased`}>{children}</body>
     </html>
   );
 }
