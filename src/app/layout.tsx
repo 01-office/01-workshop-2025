@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import GNB from "@/components/GNB";
+
 const pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
   display: "swap",
@@ -21,7 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${pretendard.variable} antialiased`}>{children}</body>
+      <body className={`${pretendard.variable} antialiased`}>
+        <div className="min-h-svh grid grid-rows-[auto_1fr] bg-white">
+          <GNB />
+          <main>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
