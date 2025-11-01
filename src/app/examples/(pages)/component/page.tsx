@@ -9,6 +9,10 @@ export default function ComponentPage() {
   const [currentMovie, setCurrentMovie] = useState<Movie | null>(null);
 
   const handleClickMovie = (movie: Movie) => {
+    if (currentMovie?.id === movie.id) {
+      setCurrentMovie(null);
+      return;
+    }
     setCurrentMovie(movie);
   };
 
