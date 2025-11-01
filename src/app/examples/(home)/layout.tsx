@@ -9,7 +9,7 @@ export default function ExamplesLayout({
   return (
     <>
       <header className="sticky top-0 z-10">
-        <nav className="flex gap-4 px-4 py-2 bg-zinc-100">
+        <nav className="flex gap-4 px-4 py-2 bg-zinc-100 flex-wrap">
           {examples.map((example) => (
             <Link
               href={example.href}

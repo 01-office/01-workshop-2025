@@ -27,4 +27,12 @@ export const examples = [
     title: "Mux",
     href: "/examples/mux",
   },
+  {
+    title: "Scroll Indicator",
+    href: "/examples/scroll-indicator",
+  },
+  {
+    title: "Side Panel",
+    href: "/examples/side-panel",
+  },
 ];
