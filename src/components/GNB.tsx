@@ -8,6 +8,7 @@ export default function GNB() {
         <Link href="/about">About</Link>
         <Link href="/homeworks">Homeworks</Link>
         <Link href="/examples">Examples</Link>
+        <Link href="/packages">Packages</Link>
       </nav>
     </header>
   );
