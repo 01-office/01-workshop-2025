@@ -3,39 +3,50 @@
 import { motion } from "motion/react";
 import type { Movie } from "./_data";
 
+const COLLAPSED_HEIGHT = 32;
+const EXPANDED_HEIGHT = 142;
+const IMAGE_SIZE = 100;
+const ANIMATION_DURATION = 0.2;
+
 interface MovieItemProps {
-  item: Movie;
+  movie: Movie;
   isOpen: boolean;
-  onClick: (movie: Movie) => void;
+  onToggle: (movie: Movie) => void;
 }
 
-export default function MovieItem({ item, isOpen, onClick }: MovieItemProps) {
+export default function MovieItem({ movie, isOpen, onToggle }: MovieItemProps) {
   return (
     <button
       type="button"
-      className="bg-white cursor-pointer"
-      onClick={() => onClick(item)}
+      className="w-full bg-white cursor-pointer text-left"
+      onClick={() => onToggle(movie)}
+      aria-expanded={isOpen}
+      aria-controls={`movie-content-${movie.id}`}
     >
       <motion.div
-        className="border-b p-1 grid grid-rows-[32px_auto] overflow-hidden"
-        initial={{ height: 32 }}
-        animate={{ height: isOpen ? 142 : 32 }}
-        transition={{ duration: 0.2, ease: "easeInOut" }}
+        className="border-b p-4 grid grid-rows-[auto_auto] overflow-hidden"
+        initial={{ height: COLLAPSED_HEIGHT }}
+        animate={{ height: isOpen ? EXPANDED_HEIGHT : COLLAPSED_HEIGHT }}
+        transition={{ duration: ANIMATION_DURATION, ease: "easeInOut" }}
       >
-        <div className="grid grid-cols-3">
-          <h2>{item.title}</h2>
-          <p>{item.director}</p>
-          <p>{item.year}</p>
+        <div className="grid grid-cols-3 items-center">
+          <h2 className="font-medium">{movie.title}</h2>
+          <p className="text-neutral-600">{movie.director}</p>
+          <p className="text-neutral-600">{movie.year}</p>
         </div>
-        <div className="pb-1 flex gap-1">
-          {item.images.map((image) => (
+        <div
+          id={`movie-content-${movie.id}`}
+          className="mt-2 flex gap-2 overflow-x-auto"
+        >
+          {movie.images.map((image, index) => (
             <img
               key={image}
               src={image}
-              alt={item.title}
-              width={100}
-              height={100}
-              className="h-[100px] w-auto"
+              alt={`${movie.title} scene ${index + 1}`}
+              width={IMAGE_SIZE}
+              height={IMAGE_SIZE}
+              className="h-[100px] w-auto  object-cover rounded"
+              loading="lazy"
             />
           ))}
         </div>

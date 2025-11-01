@@ -3,7 +3,7 @@ export type Movie = {
   title: string;
   director: string;
   year: number;
-  images: string[]; // 포스터 및 기타 대표 이미지 배열
+  images: string[];
 };
 
 export const MOVIES: Movie[] = [
@@ -13,7 +13,7 @@ export const MOVIES: Movie[] = [
     director: "Christopher Nolan",
     year: 2010,
     images: [
-      "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg", // 포스터
+      "https://image.tmdb.org/t/p/w500/edv5CZvWj09upOsy2Y6IwDhK8bt.jpg",
       "https://image.tmdb.org/t/p/w500/s2bT29y0ngXxxu2IA8AOzzXTRhd.jpg",
       "https://image.tmdb.org/t/p/w500/aejYp9A5mVsPLljXXlxlUnwP2J6.jpg",
     ],
