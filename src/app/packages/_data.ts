@@ -252,4 +252,26 @@ tl.to(".box1", { x: 100, duration: 1 })
     summary: "고성능 애니메이션",
     tags: ["애니메이션", "성능", "타임라인"],
   },
+  {
+    name: "MediaPipe",
+    description:
+      "MediaPipe는 Google에서 개발한 오픈소스 프레임워크로, 실시간 스트리밍 미디어를 위한 크로스 플랫폼 머신러닝 솔루션을 제공합니다. 얼굴 인식, 손 추적, 포즈 추정 등 다양한 컴퓨터 비전 기능을 손쉽게 구현할 수 있습니다.",
+    features: [
+      "실시간 처리 성능 (모바일 GPU 지원)",
+      "크로스 플랫폼 지원 (웹, 모바일, 데스크톱)",
+      "얼굴 인식 및 손 추적",
+      "포즈 추정 및 객체 인식",
+      "오픈소스 및 커스터마이징 가능",
+    ],
+    installCommand: "npm install @mediapipe/tasks-vision",
+    exampleCode: `import { useHandLandmarker } from "@mediapipe/tasks-vision"`,
+    docUrl: "https://mediapipe-studio.webapps.google.com/home",
+    color: {
+      primary: "text-indigo-600",
+      hover: "hover:text-indigo-700",
+      title: "text-indigo-900",
+    },
+    summary: "머신러닝/컴퓨터 비전",
+    tags: ["머신러닝", "컴퓨터비전", "실시간"],
+  },
 ];
