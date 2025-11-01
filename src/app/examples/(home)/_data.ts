@@ -23,4 +23,8 @@ export const examples = [
     title: "Slug",
     href: "/examples/slug",
   },
+  {
+    title: "Mux",
+    href: "/examples/mux",
+  },
 ];

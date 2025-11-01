@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import type { Movie } from "./_data";
-import Image from "next/image";
 
 interface MovieItemProps {
   item: Movie;
