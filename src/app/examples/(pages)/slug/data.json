@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Svart Te",
+    "description": "Svart te föddes i Kina. Det är tillverkat av blad från en växt som kallas Camellia och kan smaksättas olika med frukter till exempel. En trevlig, varm, smakfull och aromatisk dryck som passar till vardagen.",
+    "ingredients": ["Te"],
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
+    "id": 13
+  },
+  {
+    "title": "Apelsinjuice",
+    "description": "Vi har inget att säga om vår nypressade apelsinjuice. Du måste prova den själv.",
+    "ingredients": ["Färska Apelsiner", "Is"],
+    "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fG9yYW5nZSUyMGp1aWNlfGVufDB8fDB8fHww",
+    "id": 18
+  },
+  {
+    "title": "Lemonad",
+    "description": "Var känd i Paris först och blev sedan mycket populär i hela Europa. Denna söta, färglösa, kolsyrade dryck görs genom att blanda citronsaft och kolsyrat vatten.",
+    "ingredients": ["Citronsaft", "Kolsyrat vatten", "Honung"],
+    "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVtb25hZGV8ZW58MHx8MHx8fDA%3D",
+    "id": 20
+  },
+  {
+    "title": "title",
+    "description": "desc",
+    "ingredients": "[t,e,s,t]",
+    "image": "gerald",
+    "id": "313513"
+  },
+  {
+    "title": "Espresso",
+    "description": "A tasty tret",
+    "ingredients": ["Espresso"],
+    "image": "https://cdn.pixabay.com/photo/2016/11/29/13/17/coffee-1869772_1280.jpg",
+    "id": "Rv6kUA-"
+  },
+  {
+    "title": "Hot Banglore Coffee",
+    "description": "Hot coffee is good cold.",
+    "ingredients": ["Coffee Beans"],
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlYXxlbnwwfHwwfHx8MA%3D%3D",
+    "id": 30
+  }
+]
