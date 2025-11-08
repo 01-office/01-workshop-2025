@@ -2,6 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 
 import GNB from "@/components/GNB";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <GNB />
           <main>{children}</main>
         </div>
+        <Analytics />
       </body>
     </html>
   );
